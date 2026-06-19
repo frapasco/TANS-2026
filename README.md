@@ -1,4 +1,4 @@
-# TANS-2026
+# TANS-UniTO
 ## Abstract
 
 Lo scopo del software è simulare lo stato finale di un evento di scattering tra due fasci di particelle, con produzione di particelle cariche in un collision diamond gaussiano rispetto all'origine e la seguente propagazione nell'apparato sperimentale costituito da una beam pipe e due tracciatori cilindrici.
