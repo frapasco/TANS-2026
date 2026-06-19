@@ -16,3 +16,9 @@ Per l'esecuzione della simulazione e della ricostruzione con conseguente analisi
 	ricostruzione()
 	analysis()
 ```
+
+N.B. Il codice è stato compilato ed eseguito con:
+```
+ROOT Version: 6.36.10
+Built for macosxarm64
+```
