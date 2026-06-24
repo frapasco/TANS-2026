@@ -87,6 +87,7 @@ bool Track :: Intersection(double x0, double y0, double z0, double &X, double &Y
 //___________________________________________________________________________________________
 //intersezione tracklet con piano x=0
 void Track::Intersection0(double x0, double y0, double z0, double &Z){
+  (void) y0;
   double tt=-x0/fC1; //mi serparametro retta che corrisponde al suo punto di intersezione col piano x=0 (tt=(0-x0)/fC1)	
   Z=z0+fC3*tt;	//coordinata Z del punto di intersezione della tracklet col piano x=0
 }

@@ -514,9 +514,9 @@ void plot(const vector<double> *const vztruep,
 
   // istogrammi residui bin per bin per risoluzione vs. molteplicità per ztrue
   // entro 1 sigma da 0
-  TH1D *isto_residui1[arrayLenghtMulti];
+  vector<TH1D*> isto_residui1(arrayLenghtMulti);
   // analogo per 3 sigma
-  TH1D *isto_residui3[arrayLenghtMulti];
+  vector<TH1D*> isto_residui3(arrayLenghtMulti);
   for (int i = 0; i < arrayLenghtMulti; i++) {
     snprintf(nome, sizeof(nome), "isto_residui1[%i]", i);
     snprintf(titolo, sizeof(titolo),  "residui 1 sigma per %f<molteplicita'<%f", multibin[i],
@@ -609,7 +609,7 @@ void plot(const vector<double> *const vztruep,
                                  500, -0.1, 0.1);
 
   // istogrammi residui bin per bin per risoluzione vs ztrue
-  TH1D *isto_residuiztrue[arraylenghtz];
+  vector<TH1D*> isto_residuiztrue(arraylenghtz);
 
   for (int i = 0; i < arraylenghtz; i++) {
     snprintf(nome, sizeof(nome), "isto_residuiztrue[%i]", i);
